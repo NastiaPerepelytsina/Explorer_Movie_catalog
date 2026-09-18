@@ -1,10 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Movie catalog</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-$END$
+
+    <nav class="menu">
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <ul>
+            <li>
+                <a href="new_films.html" class="page_new">News films</a>
+            </li>
+            <li>
+                <a href="films.html" class="page_films">Films</a>
+            </li>
+            <li>
+            <a href="genre.html" class="menu-item">Genres</a>
+        </li>
+            <li>
+                <a href="serials.html" class="page_serials">Serials</a>
+            </li>
+        </ul>
+
+        <div class="search">
+            <a href="http://"><i class="fa-solid fa-magnifying-glass" id="icon_Search"></i></a>
+            <input type="text" class="search" placeholder="Search by genre" id="search">
+        </div>
+
+        <button class="account" id="account">
+            <a href="http://"><i class="fa-solid fa-user"></i>Log in</a>
+        </button>
+
+    </nav>
+    <header class="header" id="header">
+        <div class="slider-header">
+            <div class="card">
+                <img src="images/slidshows/main%20slideshow/thinking%20like%20prisoner.png" alt="">
+
+            </div>
+
+            <div class="card">
+                <img src="images/slidshows/main%20slideshow/The%20Shawshank%20Redemption.png" alt="">
+
+            </div>
+
+            <div class="card">
+                <img src="images/slidshows/main%20slideshow/Avatar.png" alt="">
+
+            </div>
+
+            <div class="card">
+                <img src="images/slidshows/main%20slideshow/king%20of%20lion.png" alt="">
+
+            </div>
+
+        </div>
+
+</header>
+
+    <main>
+        <section class="container">
+            <h2>Popular films</h2>
+
+            <div class="container_popular_films">
+                <div class="slider_New_films" id="slider_New_films"></div>
+            </div>
+        </section>
+
+        <section class="container_new_film">
+            <h2>New films</h2>
+
+            <div class="container_new_film_on_site">
+                <div class="slider_New_films_on_site" id="slider_New_films_on_site"></div>
+            </div>
+        </section>
+    </main>
+
+<section class="genre">
+    <div class="container_genre">
+
+        <h2>Genres</h2>
+        <div class="slider_genres" id="slider_Genres">
+            <div class="arrow_left" id="arrow_left">
+            <span>&#10148;</span>
+        </div>
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/comedy.png" alt="">
+                <p>Comedy</p>
+            </div>
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/documentary.png" alt="">
+                <p>Documentary</p>
+            </div>
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/adventury.png" alt="">
+                <p>Adventure</p>
+            </div>
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/fantasy.png" alt="">
+                <p>Fantasy</p>
+            </div>
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/action.png" alt="">
+                <p>Action</p>
+            </div>
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/melodram.png" alt="">
+                <p>Melodrama</p>
+            </div>
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/drama.png" alt="">
+                <p>Drama</p>
+            </div>
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/family.png" alt="">
+                <p>Family</p>
+            </div>
+
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/criminal.png" alt="">
+                <p>Criminal</p>
+            </div>
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/sport.png" alt="">
+                <p>Sport</p>
+            </div>
+
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/war.png" alt="">
+                <p>War</p>
+            </div>
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/music.png" alt="">
+                <p>Music</p>
+            </div>
+
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/biography.png" alt="">
+                <p>Biography</p>
+            </div>
+
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/horror.png" alt="">
+                <p>Horror</p>
+            </div>
+
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/history.png" alt="">
+                <p>History</p>
+            </div>
+
+
+            <div class="genre_slide">
+                <img src="images/slidshows/genres/cartoon.png" alt="">
+                <p>Cartoon</p>
+            </div>
+
+        </div>
+
+        <div class="arrow_right" id="arrow_right">
+            <span>&#10148;</span>
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>This project was created solely to demonstrate my skills in HTML and JavaScript. All images were generated by GPT.</p>
+</footer>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
